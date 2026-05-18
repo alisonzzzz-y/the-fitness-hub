@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - The Fitness Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">The Fitness Hub</a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workout-generator.html">Generator</a></li>
+          <li><a href="exercise-library.html">Exercise Library</a></li>
+          <li><a href="weekly-plan.html">Plan</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <img
+        src="../images/page-header/about.jpg"
+        alt="about"
+        class="page-header-image"
+        aria-hidden="true"
+      />
+      <div class="page-header-content">
+        <h1>About The Fitness Hub</h1>
+        <p>Empowering your fitness journey, one workout at a time</p>
+      </div>
+    </header>
+
+    <main class="about-container">
+      <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>
+          At The Fitness Hub, we believe fitness should be accessible,
+          enjoyable, and effective for everyone. Our mission is to provide you
+          with the tools, knowledge, and inspiration you need to achieve your
+          health and fitness goals—without complicated sign-ups, hidden costs,
+          or data collection.
+        </p>
+        <p>
+          We're committed to making quality fitness resources available to all,
+          because we believe that everyone deserves the opportunity to become
+          the strongest, healthiest version of themselves.
+        </p>
+      </section>
+
+
+      <section class="story-section">
+        <h2>Our Story</h2>
+        <div class="story-content">
+          <p>
+            The Fitness Hub was born from a simple observation: quality fitness
+            guidance was either too expensive, too complicated, or required
+            giving up personal information just to access basic tools. We knew
+            there had to be a better way.
+          </p>
+          <p>
+            We created The Fitness Hub as a comprehensive, free resource that
+            respects your privacy while providing professional-grade fitness
+            tools. No ads, no upsells, no data harvesting—just pure, effective
+            fitness resources designed to help you succeed.
+          </p>
+          <p>
+            Today, we're proud to serve fitness enthusiasts at every level, from
+            complete beginners taking their first steps toward better health, to
+            experienced athletes looking to refine their training. Our platform
+            continues to grow and evolve based on what people actually need to
+            reach their goals.
+          </p>
+        </div>
+      </section>
+
+      <section class="features-highlight">
+        <h2>What Makes Us Different</h2>
+        <div class="features-list">
+          <article class="feature-item">
+            <h3>No Registration Required</h3>
+            <p>
+              Jump straight into creating workouts and accessing all our
+              resources. No accounts, no passwords, no hassle.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <h3>Completely Free</h3>
+            <p>
+              Every feature, every tool, every article is 100% free. No premium
+              tiers, no hidden costs, no subscription fees—ever.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <h3>Customizable Plans</h3>
+            <p>
+              Generate workouts tailored to your fitness level, available time,
+              equipment, and goals. Your fitness journey, your way.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <h3>Comprehensive Library</h3>
+            <p>
+              Detailed exercise instructions, nutrition guides, training
+              articles, and a complete glossary of fitness terms.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <h3>Works Everywhere</h3>
+            <p>
+              Access The Fitness Hub from any device—phone, tablet, or computer.
+              Your workouts go wherever you do.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <h3>Always Improving</h3>
+            <p>
+              We continuously update our content and features to provide you
+              with the latest, most effective fitness information.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>
+          Have a suggestion, found a bug, or just want to say hello? Fill out
+          the form below and we'll get back to you.
+        </p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="feedback">Feedback / Suggestion</option>
+              <option value="bug">Report a Bug</option>
+              <option value="partnership">Partnership</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="How can we help you?"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="cta-button contact-btn">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <section class="cta-section">
+        <h2>Ready to Transform Your Fitness?</h2>
+        <p>
+          Start building your personalized workout plan today. No sign-up
+          required, no credit card needed, no strings attached. Just effective
+          fitness tools ready when you are.
+        </p>
+        <a href="workout-generator.html" class="cta-button"
+          >Create Your First Workout</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="workout-generator.html">Generator</a>
+          <a href="exercise-library.html">Exercise Library</a>
+          <a href="weekly-plan.html">Plan</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="articles.html">Articles</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="footer-copy">
+          <p>&copy; 2025 The Fitness Hub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

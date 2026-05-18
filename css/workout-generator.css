@@ -1,0 +1,273 @@
+.page-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(18, 18, 18, 0.9));
+  padding-bottom: 8rem;
+}
+
+.page-header::before {
+  height: 120px;
+}
+
+.generator-container {
+  max-width: 900px;
+  margin: -3rem auto 5rem;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.generator-form {
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 0.95),
+    rgba(30, 30, 30, 0.95)
+  );
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgb(58, 58, 58);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(74, 74, 74);
+  border-radius: 12px;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(255, 255, 255);
+}
+
+.form-group select option {
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.plan-structure {
+  border: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.plan-structure legend {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+
+.plan-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.plan-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e8e8e8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.plan-options label:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+.plan-options label:has(input:checked) {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+.plan-options input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.generate-button {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.generate-button:hover,
+.generate-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  background-color: #f0f0f0;
+}
+
+.workout-result {
+  margin-top: 3rem;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(50, 50, 50, 0.9),
+    rgba(35, 35, 35, 0.9)
+  );
+  border-radius: 12px;
+  border: 1px solid rgb(74, 74, 74);
+  display: none;
+}
+
+.workout-result:not([hidden]) {
+  display: block;
+}
+
+.workout-result.show {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.workout-result h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.plan-summary {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan-summary-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: rgb(208, 208, 208);
+}
+
+.plan-summary-item span {
+  min-width: 140px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.plan-summary-item p {
+  margin: 0;
+}
+
+.plan-days {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.plan-day {
+  background-color: rgba(43, 43, 43, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgb(58, 58, 58);
+  padding: 1.5rem;
+}
+
+.plan-day h3 {
+  font-size: 1.35rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+.plan-exercise {
+  display: grid;
+  gap: 0.35rem;
+  color: rgb(208, 208, 208);
+}
+
+.plan-exercise:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.plan-exercise strong {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.plan-exercise span {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.plan-tips {
+  margin-top: 2rem;
+}
+
+.plan-tips h3 {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.75rem;
+}
+
+.plan-tip {
+  color: rgb(208, 208, 208);
+}
+
+.plan-tip:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* Large screens */
+@media (min-width: 834px) {
+  .generator-container {
+    padding: 0 2rem;
+  }
+
+  .generator-form {
+    padding: 3rem;
+  }
+
+  .workout-result {
+    padding: 2.5rem;
+  }
+}

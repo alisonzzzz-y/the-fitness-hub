@@ -1,0 +1,150 @@
+.page-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(18, 18, 18, 0.9));
+  padding: 5rem 1.5rem 8rem;
+}
+
+.page-header::before {
+  height: 120px;
+}
+
+.plan-container {
+  max-width: 1200px;
+  margin: -4rem auto 5rem;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.weekly-schedule {
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 0.9),
+    rgba(30, 30, 30, 0.9)
+  );
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #3a3a3a;
+  margin-bottom: 4rem;
+}
+
+.weekly-schedule h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(30, 30, 30, 0.9);
+  border: 1px solid #3a3a3a;
+  font-size: 0.9rem;
+}
+
+.plan-table th,
+.plan-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #d0d0d0;
+  vertical-align: top;
+}
+
+.plan-table thead {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.plan-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.plan-table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.plan-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.plan-table th[scope="row"] {
+  width: 220px;
+  font-weight: 700;
+}
+
+.plan-table-day {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-table-day span:first-child {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.plan-table-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.plan-table-badge.rest-day {
+  background-color: rgba(255, 170, 43, 0.15);
+  color: #ffa115;
+  border: 1px solid rgba(255, 186, 75, 0.4);
+}
+
+.plan-table-activity {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.plan-table-activity:last-child {
+  border-bottom: none;
+}
+
+.plan-table-activity strong {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.plan-table-activity p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Large screens */
+@media (min-width: 834px) {
+  .page-header {
+    padding-bottom: 8rem;
+  }
+
+  .plan-container {
+    margin: -3rem auto 5rem;
+    padding: 0 2rem;
+  }
+
+  .weekly-schedule {
+    padding: 3.5rem 3rem;
+  }
+
+  .plan-table {
+    font-size: 1rem;
+  }
+
+  .plan-table th,
+  .plan-table td {
+    padding: 1rem 1.25rem;
+  }
+}

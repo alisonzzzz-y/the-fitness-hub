@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Library - The Fitness Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/exercise-library.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">The Fitness Hub</a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workout-generator.html">Generator</a></li>
+          <li>
+            <a href="exercise-library.html" aria-current="page"
+              >Exercise Library</a
+            >
+          </li>
+          <li><a href="weekly-plan.html">Plan</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <img
+        src="../images/page-header/library.png"
+        alt="workout"
+        class="page-header-image"
+        aria-hidden="true"
+      />
+      <div class="page-header-content">
+        <h1>Exercise Library</h1>
+        <p>Discover detailed instructions and benefits for every exercise</p>
+      </div>
+    </header>
+
+    <section class="filter-section">
+      <div class="filter-bar">
+        <button class="filter-button active">All</button>
+        <button class="filter-button">Upper Body</button>
+        <button class="filter-button">Lower Body</button>
+        <button class="filter-button">Core</button>
+        <button class="filter-button">Cardio</button>
+      </div>
+    </section>
+
+    <main class="library-container">
+      <section class="category-section">
+        <h2>Upper Body Exercises</h2>
+        <div class="exercises-grid">
+          <article class="exercise-card" id="push-up">
+            <h3>Push-Up</h3>
+            <div>
+              <span class="exercise-tag">Chest</span>
+              <span class="exercise-tag">Shoulders</span>
+              <span class="exercise-tag">Triceps</span>
+            </div>
+            <p class="exercise-description">
+              A bodyweight push that builds pressing strength.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Builds chest, shoulder, and arm strength</li>
+                <li>Improves core stability</li>
+                <li>Can be done anywhere</li>
+                <li>Multiple variations for all fitness levels</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Start in a tall plank with hands stacked under shoulders and
+                  core braced.
+                </li>
+                <li>
+                  Lower your chest toward the floor, keeping elbows around a 45°
+                  angle.
+                </li>
+                <li>
+                  Press evenly through both palms to return to the starting
+                  position.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Pull-Up</h3>
+            <div>
+              <span class="exercise-tag">Back</span>
+              <span class="exercise-tag">Biceps</span>
+              <span class="exercise-tag">Shoulders</span>
+            </div>
+            <p class="exercise-description">
+              Simple vertical pull that targets the back and arms.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Develops strong back muscles</li>
+                <li>Builds functional upper body strength</li>
+                <li>Improves grip strength</li>
+                <li>Great for posture improvement</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Grip the bar slightly wider than shoulder-width with palms
+                  facing away.
+                </li>
+                <li>
+                  Drive elbows down and back while pulling your chest toward the
+                  bar.
+                </li>
+                <li>
+                  Lower slowly until arms are straight while keeping shoulders
+                  engaged.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Dips</h3>
+            <div>
+              <span class="exercise-tag">Triceps</span>
+              <span class="exercise-tag">Chest</span>
+              <span class="exercise-tag">Shoulders</span>
+            </div>
+            <p class="exercise-description">
+              Bodyweight dip variation to target triceps and chest.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Targets triceps effectively</li>
+                <li>Builds pushing strength</li>
+                <li>Strengthens shoulders and chest</li>
+                <li>Improves lockout strength</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Support yourself on parallel bars with elbows locked and chest
+                  tall.
+                </li>
+                <li>
+                  Lower until elbows reach roughly 90° while keeping shoulders
+                  down.
+                </li>
+                <li>Press back to the top without snapping the elbows.</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>Lower Body Exercises</h2>
+        <div class="exercises-grid">
+          <article class="exercise-card" id="squat">
+            <h3>Squat</h3>
+            <div>
+              <span class="exercise-tag">Quads</span>
+              <span class="exercise-tag">Glutes</span>
+              <span class="exercise-tag">Core</span>
+            </div>
+            <p class="exercise-description">
+              Foundational squat pattern for strong legs and core.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Builds powerful legs and glutes</li>
+                <li>Improves mobility and flexibility</li>
+                <li>Strengthens core and back</li>
+                <li>Functional movement pattern</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Stand tall with feet shoulder-width and toes slightly out.
+                </li>
+                <li>
+                  Push hips back, bend knees, and lower until thighs are
+                  parallel with the floor.
+                </li>
+                <li>Keep chest lifted and drive knees in line with toes.</li>
+                <li>
+                  Press through the heels to stand, squeezing glutes at the top.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Lunges</h3>
+            <div>
+              <span class="exercise-tag">Quads</span>
+              <span class="exercise-tag">Glutes</span>
+              <span class="exercise-tag">Balance</span>
+            </div>
+            <p class="exercise-description">
+              Walking lunge to train single-leg strength and balance.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Corrects muscle imbalances</li>
+                <li>Improves balance and coordination</li>
+                <li>Builds leg and glute strength</li>
+                <li>Functional for daily activities</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Step forward and lower until both knees reach roughly 90°.
+                </li>
+                <li>
+                  Keep torso upright and front knee stacked over the ankle.
+                </li>
+                <li>
+                  Drive through the front heel to stand and alternate legs.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Deadlift</h3>
+            <div>
+              <span class="exercise-tag">Hamstrings</span>
+              <span class="exercise-tag">Glutes</span>
+              <span class="exercise-tag">Back</span>
+            </div>
+            <p class="exercise-description">
+              Heavy hinge emphasising glutes, hamstrings, and back.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Builds total body strength</li>
+                <li>Strengthens posterior chain</li>
+                <li>Improves posture and core stability</li>
+                <li>Highly functional movement</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Stand with feet hip-width, bar over mid-foot, and hinge to
+                  grip it.
+                </li>
+                <li>
+                  Brace, drive the floor away, and extend hips and knees
+                  together.
+                </li>
+                <li>
+                  Lower with control while keeping the bar close to the body.
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>Core Exercises</h2>
+        <div class="exercises-grid">
+          <article class="exercise-card">
+            <h3>Plank</h3>
+            <div>
+              <span class="exercise-tag">Core</span>
+              <span class="exercise-tag">Shoulders</span>
+              <span class="exercise-tag">Stability</span>
+            </div>
+            <p class="exercise-description">
+              Static plank hold to train trunk stability.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Builds core endurance</li>
+                <li>Improves posture</li>
+                <li>Strengthens entire trunk</li>
+                <li>Low impact on spine</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Set forearms on the floor with elbows under shoulders and legs
+                  extended.
+                </li>
+                <li>
+                  Squeeze glutes and keep a straight line from head to heels.
+                </li>
+                <li>
+                  Hold while breathing steadily and avoid letting hips sag.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Russian Twists</h3>
+            <div>
+              <span class="exercise-tag">Obliques</span>
+              <span class="exercise-tag">Core</span>
+              <span class="exercise-tag">Balance</span>
+            </div>
+            <p class="exercise-description">
+              Rotational core move to challenge obliques.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Targets obliques effectively</li>
+                <li>Improves rotational strength</li>
+                <li>Enhances core stability</li>
+                <li>Functional for sports</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>
+                  Sit tall with knees bent, lean back slightly, and lift feet if
+                  possible.
+                </li>
+                <li>Hold a light weight at chest level and brace the core.</li>
+                <li>
+                  Rotate torso side to side, touching the weight toward each
+                  hip.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Mountain Climbers</h3>
+            <div>
+              <span class="exercise-tag">Core</span>
+              <span class="exercise-tag">Cardio</span>
+              <span class="exercise-tag">Full Body</span>
+            </div>
+            <p class="exercise-description">
+              Dynamic plank variation for cardio and core.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Cardio and strength combined</li>
+                <li>Burns calories efficiently</li>
+                <li>Improves core stability</li>
+                <li>Increases heart rate</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>Start in a strong plank with hands under shoulders.</li>
+                <li>
+                  Drive one knee toward the chest while keeping hips level.
+                </li>
+                <li>
+                  Switch legs swiftly in a running motion while maintaining
+                  control.
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <h2>Cardio Exercises</h2>
+        <div class="exercises-grid">
+          <article class="exercise-card">
+            <h3>Burpees</h3>
+            <div>
+              <span class="exercise-tag">Full Body</span>
+              <span class="exercise-tag">Cardio</span>
+              <span class="exercise-tag">Explosive</span>
+            </div>
+            <p class="exercise-description">
+              Full-body conditioning move that blends strength and cardio.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Full-body workout</li>
+                <li>Burns maximum calories</li>
+                <li>Improves cardiovascular fitness</li>
+                <li>Builds explosive power</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>From standing, drop into a squat and plant your hands.</li>
+                <li>
+                  Kick feet back to a plank, perform a push-up if desired.
+                </li>
+                <li>Jump feet back in and explode upward with a small jump.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>Jumping Jacks</h3>
+            <div>
+              <span class="exercise-tag">Cardio</span>
+              <span class="exercise-tag">Full Body</span>
+              <span class="exercise-tag">Coordination</span>
+            </div>
+            <p class="exercise-description">
+              Classic warm-up drill to raise heart rate quickly.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Increases heart rate quickly</li>
+                <li>Improves coordination</li>
+                <li>Warms up entire body</li>
+                <li>No equipment needed</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>Start with feet together and arms by your sides.</li>
+                <li>Jump feet out while raising arms overhead.</li>
+                <li>
+                  Return to the starting position and repeat rhythmically.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <h3>High Knees</h3>
+            <div>
+              <span class="exercise-tag">Cardio</span>
+              <span class="exercise-tag">Legs</span>
+              <span class="exercise-tag">Core</span>
+            </div>
+            <p class="exercise-description">
+              Running-in-place drill to build leg turnover and endurance.
+            </p>
+            <div class="exercise-benefits">
+              <h4>Benefits:</h4>
+              <ul>
+                <li>Boosts cardiovascular fitness</li>
+                <li>Strengthens hip flexors</li>
+                <li>Improves running form</li>
+                <li>Burns calories effectively</li>
+              </ul>
+            </div>
+            <div class="exercise-steps">
+              <h4>How to Perform:</h4>
+              <ol>
+                <li>Stand tall with arms bent at 90°.</li>
+                <li>
+                  Drive one knee toward the chest as you rise onto the opposite
+                  toe.
+                </li>
+                <li>Alternate legs quickly while pumping the arms.</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="workout-generator.html">Generator</a>
+          <a href="exercise-library.html">Exercise Library</a>
+          <a href="weekly-plan.html">Plan</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="articles.html">Articles</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="footer-copy">
+          <p>&copy; 2025 The Fitness Hub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
